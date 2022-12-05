@@ -27,12 +27,14 @@ enc = OneHotEncoder(sparse=False)
 #Encode the categorcal variables using OneHotEncoder
 encoded_data = enc.fit_transform(applicant_data_df[categorical_variables])
 # Create a DataFrame with the encoded variables
-encoded_df = pd.DataFrame(encoded_data,           columns=enc.get_feature_names(categorical_variables))
+encoded_df = pd.DataFrame(encoded_data,           
+columns=enc.get_feature_names(categorical_variables))
 
 ```
 The encoded data will look like a snapshot of the below DataFrame:
 
-![encoded_data_df](Images/encoded_df.png)
+<img src="Images/encoded_df.png" alt="encoded_data_df" width="600"/>
+
 
 
 The encoded data is addded to the 'Is_Successful' column and then seperated into the features (X) and the target (y) datasets. These datasets are further split to training and testing datasets.
