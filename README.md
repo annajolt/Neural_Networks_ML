@@ -32,7 +32,7 @@ encoded_df = pd.DataFrame(encoded_data,           columns=enc.get_feature_names(
 ```
 The encoded data will look like a snapshot of the below DataFrame:
 
-![encoded_data_df](images/encoded_df.png)
+![encoded_data_df](Images/encoded_df.png)
 
 
 The encoded data is addded to the 'Is_Successful' column and then seperated into the features (X) and the target (y) datasets. These datasets are further split to training and testing datasets.
